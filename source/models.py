@@ -23,14 +23,17 @@ class Layer:
         # raise Exception('Implement this part.')
         for i in range(self.num_nodes):
             # input_weight =  numpy.dot(self.input_vals, numpy.transpose(self.weight[i]))
-            # self.layer_net[i] = input_weight + self.bias            
+            # self.layer_net[i] = input_weight + self.bias     
+            # input       
             self.layer_net[i] = numpy.dot(self.input_vals, numpy.transpose(self.weight[i])) + self.bias
+            #output
             self.layer_out[i] = sig(self.layer_net[i])
             
 
     def backprop(self, other):
         #use backpropagation method to update weights
         # raise Exception('Implement this part.')
+        
         for i in range(len(self.weight)):
             for j in range(len(self.weight[i])):
                 if self.layer_num == 1:
