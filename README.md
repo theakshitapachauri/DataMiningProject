@@ -16,18 +16,18 @@ Data_Preprocessing1.ipynb : It is the .ipynb file which includes the implementat
 
 - Transforming original dataset’s records into into a set of binary variables.
 
-- Spliting the converted dataset into 3 files: training.txt for network training, val.txt for validation, and testing.txt for network testing (80:20:20).
+- Spliting the converted dataset into 3 files: training.txt for network training, val.txt for validation, and testing.txt for network testing (80:10:10).
 
 
 ***************************************************************************************************************
 
 The implementation of 3 files: 
 
-- formulas.py : Implemented the logistic funtion as the activation function, derivative of logistic function, squared error function and derivative of the squared error fucntion. 
+- formulas.py : Implemented the logistic function as the activation function, derivative of logistic function, squared error function and derivative of the squared error function. 
 
-- models.py: Implemented Evaluation and backpropagation and 
+- models.py: Implemented Evaluation and backpropagation part, 
 
-- proj_test.py : Implementation and evaluation of first layer, second layer and error part of all training, validation testing part.  
+- proj_test.py : Implementation and evaluation of first layer, second layer and error part of all training, validation and testing part.  
 
 -- Since the above provided code files had the python support of python2, I have made following changes in order to convert it to python3:
 1) In file model.py : file() method is replaced with open() since file() was only available in python2. 
@@ -35,15 +35,15 @@ The implementation of 3 files:
 
 ************************************************************************************************************
 
--- To run the Data_Preprocessing1.ipynb you can simply say run all, at the top, or you can run individual cells, and it will create the training.txt, val.txt and testing.txt files.
+-- To run the Data_Preprocessing1.ipynb you can simply click on the run all button at the top, or you can run individual cells, and it will create the training.txt, val.txt and testing.txt files.
 
 To run the project : python proj_test.py
 
-This will calculate the training error and will create a training_err.txt
+This will first calculate the training error and will create a training_err.txt
 
 You would be required to press enter to start the validation process. This will result in validation error and will create a val_err.txt
 
-You would be required to press enter to start the testing process. This will result in testing error and will create a texting_err.txt.
+You would be again required to press enter to start the testing process. This will result in testing error and will create a texting_err.txt.
 
 
 
