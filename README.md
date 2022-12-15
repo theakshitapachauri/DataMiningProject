@@ -12,7 +12,7 @@ Data_Preprocessing1.ipynb : It is the .ipynb file which includes the implementat
 
 - Conversion of the original dataset to a format that fits our NN’s input form. 
 
-- Handling all '?' or NaN values by replacing them based upon the percentage of existing categorical values, grouped by classes column. 
+- Handling all '?' or NaN values by replacing them based upon the percentage of existing categorical values, grouped by 'classes' column. 
 
 - Transforming original dataset’s records into into a set of binary variables.
 
