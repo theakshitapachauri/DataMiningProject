@@ -17,7 +17,7 @@ The implementation of 3 files:
 - proj_test.py : Implementation and evaluation of first layer, second layer and error part of all training, validation testing part.  
 
 
-Since the provided code had the python support of python2, I have written code which would be compatible for python2.
+Since the provided code had the python support of python2, I have written code which would be compatible for python2.7
 
 To run the project : python proj_test.py
 
