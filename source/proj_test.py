@@ -125,8 +125,8 @@ if __name__ == '__main__':
 
     print ("Neural network is done training! Hit enter to validation processing.")
     print ("Error percentage on training set: " + str(float(num_incorrect)/NUM_TRAINING_ITERATIONS))
-    raw_input()
-    # input()
+    # raw_input()
+    input()
 
 
     print ("Parsing the validation dataset...")
@@ -190,7 +190,8 @@ if __name__ == '__main__':
 
     print ("Neural network is done validating! Hit enter to test it.")
     print ("Error percentage on validation set: " + str(float(num_incorrect)/NUM_TRAINING_ITERATIONS))
-    raw_input()
+    # raw_input()
+    input()
 
     print ("Begin testing the neural network:")
     # parse the testing data and store its information into globals

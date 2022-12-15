@@ -4,9 +4,9 @@ Author : Akshita Pachauri
 ID : 01978422
 Email : akshita_pachauri@student.uml.edu
 
-***************************************************************************************************************
-
 Project Description:
+
+***************************************************************************************************************
 
 Data_Preprocessing1.ipynb : It is the .ipynb file which includes the implementation of the data preprocessing, including :
 
@@ -14,9 +14,12 @@ Data_Preprocessing1.ipynb : It is the .ipynb file which includes the implementat
 
 - Handling all '?' or NaN values by replacing them based upon the percentage of existing categorical values, grouped by classes column. 
 
-- Transforming original dataset’s records into into a set of binary variables
+- Transforming original dataset’s records into into a set of binary variables.
 
-- Spliting the converted dataset into 3 files: training.txt for network training, val.txt for validation, and testing.txt for network testing (90:20:20) 
+- Spliting the converted dataset into 3 files: training.txt for network training, val.txt for validation, and testing.txt for network testing (90:20:20).
+
+
+***************************************************************************************************************
 
 The implementation of 3 files: 
 
@@ -26,9 +29,9 @@ The implementation of 3 files:
 
 - proj_test.py : Implementation and evaluation of first layer, second layer and error part of all training, validation testing part.  
 
-************************************************************************************************************
-
--- Since the provided code had the python support of python2, I have written code which would be compatible for python2.7
+-- Since the above provided code files had the python support of python2, I have made following changes in order to convert it to python3:
+1) In file model.py : file() method is replaced with open() since file() was only available in python2. 
+2) In proj_text.py : changed raw_input() to input(), because in python3, raw_input() has been replaced with input() method.
 
 ************************************************************************************************************
 

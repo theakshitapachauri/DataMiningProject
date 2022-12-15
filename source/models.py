@@ -42,10 +42,21 @@ class Layer:
                     self.weight[i][j] = self.weight[i][j] - (LEARNING_RATE * self.weight_delta[i][j] * self.input_vals[j])
 
 
-class cfile(file):
+# class cfile(file):
+#     def __init__(self, name, mode = 'r'):
+#         self = file.__init__(self, name, mode)
+
+#     def w(self, string):
+#         self.writelines(str(string) + '\n')
+#         return None
+
+class cfile():
     def __init__(self, name, mode = 'r'):
-        self = file.__init__(self, name, mode)
+        self.fp = open(name, mode)
 
     def w(self, string):
-        self.writelines(str(string) + '\n')
+        self.fp.write(str(string) + '\n')
         return None
+
+    def close(self):
+        self.fp.close()
