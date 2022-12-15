@@ -126,6 +126,7 @@ if __name__ == '__main__':
     print ("Neural network is done training! Hit enter to validation processing.")
     print ("Error percentage on training set: " + str(float(num_incorrect)/NUM_TRAINING_ITERATIONS))
     raw_input()
+    # input()
 
 
     print ("Parsing the validation dataset...")

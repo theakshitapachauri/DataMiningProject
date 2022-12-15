@@ -22,6 +22,8 @@ class Layer:
         #Get input, compute the output of layer nodes.
         # raise Exception('Implement this part.')
         for i in range(self.num_nodes):
+            # input_weight =  numpy.dot(self.input_vals, numpy.transpose(self.weight[i]))
+            # self.layer_net[i] = input_weight + self.bias            
             self.layer_net[i] = numpy.dot(self.input_vals, numpy.transpose(self.weight[i])) + self.bias
             self.layer_out[i] = sig(self.layer_net[i])
             
