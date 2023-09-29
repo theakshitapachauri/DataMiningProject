@@ -1,5 +1,5 @@
 import numpy
-import random
+import random #import
 
 from config import LEARNING_RATE
 from formulas import sig, inv_sig, inv_err
