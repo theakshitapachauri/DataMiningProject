@@ -1,4 +1,4 @@
-import numpy
+import numpy #import
 import random #import
 
 from config import LEARNING_RATE
